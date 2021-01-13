@@ -72,7 +72,7 @@ ds.Surv <- function( time = NULL,
   }
 
   # call the server side function
-  calltext <- call("SurvDS1", time, time2, event, type)
+  calltext <- call("SurvDS", time, time2, event, type)
 
   DSI::datashield.assign(datasources, newobj, calltext)
 
